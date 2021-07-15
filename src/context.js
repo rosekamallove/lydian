@@ -19,7 +19,6 @@ export class Provider extends Component {
         ` ${corsAnywhere}/${defaultURL}${topChartURL}${process.env.REACT_APP_MM_KEY}`
       )
       .then((res) => {
-        console.log(res);
         this.setState({ track_list: res.data.message.body.track_list });
       })
       .catch((err) => {
