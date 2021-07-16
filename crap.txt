@@ -1,0 +1,1 @@
+https://cors-anywhere.herokuapp.com/http://api.musixmatch.com/ws/1.1/track.search?q_track=Fancy Like&page_size=10&page=1&s_track_rating=desc&apikey=9406d6cc5b5a1c9da16590297d7e908
