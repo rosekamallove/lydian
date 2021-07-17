@@ -32,9 +32,15 @@ export class Provider extends Component {
   componentDidMount() {
     axios
       .get(
-        ` ${corsAnywhere}/${defaultURL}${topChartURL}${process.env.REACT_APP_MM_KEY}`
+        `${corsAnywhere}/${defaultURL}${topChartURL}${process.env.REACT_APP_MM_KEY}`,
+        {
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+          },
+        }
       )
       .then((res) => {
+        console.log(res);
         this.setState({ track_list: res.data.message.body.track_list });
       })
       .catch((err) => {

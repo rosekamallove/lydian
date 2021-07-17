@@ -22,7 +22,7 @@ const Track = (props) => {
         </div>
         <Link
           to={`lyrics/track/${track.track_id}`}
-          className="m-2 btn btn-dark btn-block"
+          className="m-2 btn bg-primary btn-block"
         >
           <i className="fas fa-chevron-right"></i> View Lyrics
         </Link>
